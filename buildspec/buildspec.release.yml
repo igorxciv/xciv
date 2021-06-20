@@ -15,7 +15,6 @@ phases:
     commands:
       - echo Application deployment started on `date`
 
-      - aws s3 rm s3://${S3_BUCKET} --recursive
       - cd ./dist/apps/website
       - aws s3 cp ./ s3://${S3_BUCKET} --recursive
       - echo Application deployment is successfully completed on `date`
