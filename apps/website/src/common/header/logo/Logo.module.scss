@@ -9,11 +9,30 @@
   text-decoration: none;
 
   &__title1 {
-    font-size: rem(22);
+    font-size: rem(20);
+    opacity: 0;
+    text-transform: uppercase;
+    transform: translateX(rem(-115));
+    transition: all 0.4s ease-out;
+
+    &--appeared {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   &__title2 {
     font-size: rem(14);
     font-weight: lighter;
+    margin-left: rem(25);
+    opacity: 0;
+    transform: translateX(rem(-115));
+    transition: all 0.4s ease-out;
+    transition-delay: 0.1s;
+
+    &--appeared {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 }

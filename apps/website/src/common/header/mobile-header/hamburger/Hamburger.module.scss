@@ -1,11 +1,13 @@
 @import '@design/settings/colors';
 @import '@design/tools/sizing';
+@import '@design/trumps/controls';
 
 .hamburger {
   background: none;
   border: none;
   cursor: pointer;
-  padding: rem(8);
+
+  @include focusable-control;
 
   &__line {
     background-color: $color__basic-100;

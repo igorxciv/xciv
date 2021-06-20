@@ -1,0 +1,5 @@
+@import '../tools/sizing.scss';
+
+@mixin focusable-control {
+  padding: rem(8);
+}

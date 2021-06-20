@@ -1,5 +1,6 @@
 @import '@design/settings/colors';
 @import '@design/tools/sizing';
+@import '@design/trumps/controls';
 
 .mobile-menu {
   background-color: $color__basic-1000;
@@ -27,9 +28,10 @@
   &__link {
     color: $color__basic-600;
     font-family: sans-serif;
-    padding: rem(8);
     text-decoration: none;
     text-transform: uppercase;
+
+    @include focusable-control;
 
     &:hover {
       color: $color__basic-100;
