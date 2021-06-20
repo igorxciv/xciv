@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ui-kit/*": ["libs/ui-kit/src/*"],
+      "@ui-kit/*": ["libs/ui-kit/src/lib/*"],
       "@website/*": ["apps/website/src/*"]
     }
   },

@@ -107,7 +107,7 @@
 
         "import/no-default-export": "error",
         "import/no-internal-modules": ["error", {
-          "allow": ["react-test-renderer/*", "core-js/*", "regenerator-runtime/*"]
+          "allow": ["react-test-renderer/*", "core-js/*", "regenerator-runtime/*", "react-transition-group/*"]
         }],
         "import/order": ["error", {
           "groups": ["builtin", "external", "internal", "sibling"],

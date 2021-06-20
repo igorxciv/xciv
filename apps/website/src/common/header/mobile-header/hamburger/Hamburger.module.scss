@@ -1,0 +1,39 @@
+@import '@design/settings/colors.scss';
+@import '@design/tools/sizing.scss';
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: rem(8);
+  z-index: 1;
+
+  &__line {
+    background-color: $color__basic-100;
+    display: block;
+    height: rem(2);
+    opacity: 1;
+    transform: rotate(0);
+    transform-origin: 10% 10%;
+    transition: all 0.3s ease-in-out;
+    width: rem(22);
+
+    &:not(:first-child) {
+      margin-top: 4px;
+    }
+
+    &--top.crossed {
+      transform: rotate(45deg);
+      transform-origin: 10% 10%;
+    }
+
+    &--mid.crossed {
+      opacity: 0;
+    }
+
+    &--bot.crossed {
+      transform: rotate(-45deg);
+      transform-origin: 10% 90%;
+    }
+  }
+}
