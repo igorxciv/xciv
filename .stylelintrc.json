@@ -1,5 +1,5 @@
 {
-  "extends": "stylelint-config-idiomatic-order",
+  "plugins": ["stylelint-order"],
   "rules": {
     "order/order": ["custom-properties", "declarations", "at-rules", "rules"],
     "order/properties-alphabetical-order": true,

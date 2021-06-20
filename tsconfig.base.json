@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@xciv/ui-kit": ["libs/ui-kit/src/index.ts"],
+      "@ui-kit/*": ["libs/ui-kit/src/*"],
       "@website/*": ["apps/website/src/*"]
     }
   },
