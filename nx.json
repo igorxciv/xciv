@@ -19,6 +19,9 @@
     }
   },
   "projects": {
+    "ui-kit": {
+      "tags": []
+    },
     "website": {
       "tags": []
     },

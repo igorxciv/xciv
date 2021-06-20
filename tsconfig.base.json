@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@xciv/ui-kit": ["libs/ui-kit/src/index.ts"],
+      "@website/*": ["apps/website/src/*"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
