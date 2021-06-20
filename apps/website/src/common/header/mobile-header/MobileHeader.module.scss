@@ -1,7 +1,7 @@
 .mobile-header {
 
   &__mobile-menu {
-    transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-in-out;
 
     &--enter {
       transform: translateX(-100%);
