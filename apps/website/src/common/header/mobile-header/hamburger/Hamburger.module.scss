@@ -1,12 +1,11 @@
-@import '@design/settings/colors.scss';
-@import '@design/tools/sizing.scss';
+@import '@design/settings/colors';
+@import '@design/tools/sizing';
 
 .hamburger {
   background: none;
   border: none;
   cursor: pointer;
   padding: rem(8);
-  z-index: 1;
 
   &__line {
     background-color: $color__basic-100;
