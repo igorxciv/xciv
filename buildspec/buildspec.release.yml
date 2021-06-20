@@ -1,0 +1,27 @@
+version: 0.1
+phases:
+  install:
+    runtime-versions:
+       nodejs: 15
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - yarn install
+  build:
+    commands:
+      - echo Build started on `date`
+      - yarn run website:build
+  post_build:
+    commands:
+      - echo Application deployment started on `date`
+
+      - aws s3 rm s3://${S3_BUCKET} --recursive
+      - cd ./dist/apps/website
+      - aws s3 cp ./ s3://${S3_BUCKET} --recursive
+      - echo Application deployment is successfully completed on `date`
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: dist
+  discard-paths: yes

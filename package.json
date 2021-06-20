@@ -25,7 +25,8 @@
     "dep-graph": "nx dep-graph",
     "help": "nx help",
     "prepare": "husky install",
-    "website:start": "nx serve website"
+    "website:start": "nx serve website",
+    "website:build": "nx build website --prod"
   },
   "private": true,
   "dependencies": {
