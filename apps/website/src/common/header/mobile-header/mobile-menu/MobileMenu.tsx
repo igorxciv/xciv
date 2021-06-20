@@ -18,17 +18,17 @@ export const MobileMenu = forwardRef<HTMLElement, Props>((props, ref) => {
       <ul className={listClasses}>
         <li className={itemClasses}>
           <NavLink to="/courses" className={linkClasses}>
-            Курсы
+            For HR
           </NavLink>
         </li>
         <li className={itemClasses}>
-          <NavLink to="/shop" className={linkClasses}>
-            Магазин
+          <NavLink to="/projects" className={linkClasses}>
+            Projects
           </NavLink>
         </li>
         <li className={itemClasses}>
           <NavLink to="/videos" className={linkClasses}>
-            Видео
+            Services
           </NavLink>
         </li>
       </ul>
