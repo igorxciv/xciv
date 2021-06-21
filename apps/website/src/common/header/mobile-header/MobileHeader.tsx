@@ -20,10 +20,10 @@ export const MobileHeader: FC = () => {
 
   return (
     <>
+      <Hamburger crossed={isMobileMenuOpen} onClick={handleHamburgerClick} className={hamburgerClasses} />
       <CSSTransition in={isMobileMenuOpen} timeout={200} classNames={mobileMenuTransitionClasses} nodeRef={mobileMenuRef} unmountOnExit>
         <MobileMenu ref={mobileMenuRef} className={mobileMenuClasses} />
       </CSSTransition>
-      <Hamburger crossed={isMobileMenuOpen} onClick={handleHamburgerClick} className={hamburgerClasses} />
     </>
   )
 }
