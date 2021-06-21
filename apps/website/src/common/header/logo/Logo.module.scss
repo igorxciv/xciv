@@ -14,14 +14,14 @@
 
   &__title1 {
     animation: slidein 0.4s ease-out forwards;
-    font-size: rem(20);
+    font-size: rem(24);
     text-transform: uppercase;
   }
 
   &__title2 {
     animation: slidein 0.4s ease-out forwards;
     animation-delay: 0.1s;
-    font-size: rem(14);
+    font-size: rem(18);
     font-weight: lighter;
     margin-left: rem(25);
     transform: translateX(var(--from-slidein));
