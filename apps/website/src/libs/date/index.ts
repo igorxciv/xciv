@@ -1,0 +1,1 @@
+export { calculateDiffInYears } from './calculation'

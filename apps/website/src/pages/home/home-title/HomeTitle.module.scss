@@ -2,7 +2,17 @@
 @import '@design/tools/sizing';
 
 .title {
-  color: $color__basic-100;
-  font-size: rem(24);
-  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  &__occupation {
+    color: $color__basic-100;
+    font-size: rem(26);
+    margin: rem(16) 0 0;
+  }
+
+  &__experience {
+    color: $color__basic-600;
+  }
 }
