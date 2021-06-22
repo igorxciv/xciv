@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@design/settings/colors';
+@import '@design/settings/fonts';
+
+body {
+  background-color: $color__basic-1000;
+  font-family: $font__primary;
+  margin: 0;
+}

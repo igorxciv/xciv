@@ -1,0 +1,5 @@
+@import '@website-design/objects/page';
+
+.home {
+  @include page-bounds;
+}

@@ -1,0 +1,5 @@
+@import '@design/tools/sizing';
+
+@mixin page-bounds {
+  padding: rem(100) rem(15) rem(40);
+}

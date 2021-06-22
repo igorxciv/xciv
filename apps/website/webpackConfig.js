@@ -6,7 +6,8 @@ module.exports = (config, context) => {
     resolve: {
       ...config.resolve,
       alias: {
-        '@design': path.resolve(__dirname, '../../libs/ui-kit/src/lib/__design')
+        '@design': path.resolve(__dirname, '../../libs/ui-kit/src/lib/__design'),
+        '@website-design': path.resolve(__dirname, './src/__design')
       }
     }
   }
