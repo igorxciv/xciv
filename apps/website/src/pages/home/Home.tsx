@@ -1,5 +1,6 @@
 import classNames from 'classnames'
 import { FC } from 'react'
+import { HomeTitle } from './home-title'
 import styles from './Home.module.scss'
 
 export const Home: FC = () => {
@@ -7,7 +8,7 @@ export const Home: FC = () => {
 
   return (
     <main className={pageClasses}>
-      Home page
+      <HomeTitle />
     </main>
   )
 }
