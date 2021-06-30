@@ -1,6 +1,6 @@
 import classNames from 'classnames'
 import { FC } from 'react'
-import { Link } from 'react-router-dom'
+import { Link } from '@website/components'
 import styles from './Logo.module.scss'
 
 export const Logo: FC = () => {
