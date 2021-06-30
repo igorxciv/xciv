@@ -1,4 +1,5 @@
 @import '@design/settings/colors';
+@import '@design/settings/fonts';
 @import '@design/tools/sizing';
 
 .title {
@@ -9,10 +10,12 @@
   &__occupation {
     color: $color__basic-100;
     font-size: rem(26);
+    font-weight: $font-weight__medium;
     margin: rem(16) 0 0;
   }
 
   &__experience {
     color: $color__basic-600;
+    font-weight: $font-weight__light;
   }
 }

@@ -1,28 +1,32 @@
 @import '@design/settings/colors';
+@import '@design/settings/fonts';
 @import '@design/tools/sizing';
 @import '@design/objects/slide-animations';
 
 .logo {
-  --from-slidein: #{rem(-115)};
+  --from-slidein: #{rem(-110)};
   --to-slidein: 0;
 
   color: $color__basic-100;
   display: flex;
   flex-direction: column;
+  letter-spacing: rem(1);
   text-decoration: none;
 
   &__title1 {
     animation: slidein 0.4s ease-out forwards;
     font-size: rem(24);
+    font-weight: $font-weight__medium;
     text-transform: uppercase;
   }
 
   &__title2 {
+    --to-slidein: #{rem(25)};
+
     animation: slidein 0.4s ease-out forwards;
     animation-delay: 0.1s;
     font-size: rem(18);
-    font-weight: lighter;
-    margin-left: rem(25);
+    font-weight: $font-weight__light;
     transform: translateX(var(--from-slidein));
   }
 }
