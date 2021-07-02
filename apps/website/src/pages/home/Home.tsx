@@ -6,11 +6,12 @@ import styles from './Home.module.scss'
 
 export const Home: FC = () => {
   const pageClasses = classNames(styles['home'])
+  const aboutClasses = classNames(styles['home__about'])
 
   return (
     <main className={pageClasses}>
       <HomeTitle />
-      <AboutMe />
+      <AboutMe className={aboutClasses} />
     </main>
   )
 }

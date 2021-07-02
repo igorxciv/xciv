@@ -1,5 +1,10 @@
 @import '@website-design/objects/page';
+@import '@design/tools/sizing';
 
 .home {
   @include page-bounds;
+
+  &__about {
+    margin-top: rem(20);
+  }
 }
