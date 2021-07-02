@@ -8,11 +8,13 @@
   width: 100%;
 
   &--active {
+    --line-size: #{rem(2)};
+
     &::after {
       background-color: $color__basic-100;
-      bottom: rem(-4);
+      bottom: 0;
       content: '';
-      height: rem(4);
+      height: var(--line-size);
       left: 0;
       position: absolute;
       width: 100%;
