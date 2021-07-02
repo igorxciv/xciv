@@ -1,21 +1,16 @@
-import { FC, useCallback, MouseEvent } from 'react'
+import { FC } from 'react'
+import classNames from 'classnames'
 import { Link as RouterLink, LinkProps, useLocation } from 'react-router-dom'
+import styles from './Link.module.scss'
 
 export const Link: FC<LinkProps> = (props: LinkProps) => {
-  const { children, to, onClick, ...restProps } = props
+  const { children, to, className, ...restProps } = props
   const { pathname } = useLocation()
 
-  const handleClick = useCallback((event: MouseEvent<HTMLAnchorElement>) => {
-    if (pathname === to) {
-      event.preventDefault()
-    }
-    if (onClick) {
-      onClick(event)
-    }
-  }, [onClick, to, pathname])
+  const linkClasses = classNames(className, { [styles['link--no-navigation']]: pathname === to })
 
   return (
-    <RouterLink to={to} onClick={handleClick} {...restProps}>
+    <RouterLink to={to} className={linkClasses} {...restProps}>
       {children}
     </RouterLink>
   )
