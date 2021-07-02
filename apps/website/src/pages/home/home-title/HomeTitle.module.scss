@@ -9,13 +9,14 @@
 
   &__occupation {
     color: $color__basic-100;
-    font-size: rem(26);
+    font-size: rem(30);
     font-weight: $font-weight__medium;
     margin: rem(16) 0 0;
   }
 
   &__experience {
     color: $color__basic-600;
+    font-size: rem(20);
     font-weight: $font-weight__light;
   }
 }
