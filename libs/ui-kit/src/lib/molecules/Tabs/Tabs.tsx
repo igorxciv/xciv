@@ -8,7 +8,7 @@ export const Tabs: FC<unknown> = (props: PropsWithChildren<unknown>) => {
   const tabsClasses = classNames(styles['tabs'])
 
   return (
-    <ul className={tabsClasses}>
+    <ul role="tablist" className={tabsClasses}>
       {children}
     </ul>
   )

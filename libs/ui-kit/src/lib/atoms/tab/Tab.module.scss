@@ -2,7 +2,6 @@
 @import '@design/tools/sizing';
 
 .tab {
-  color: $color__basic-100;
   list-style: none;
   position: relative;
   width: 100%;
@@ -22,10 +21,13 @@
   }
 
   &__title {
+    background-color: transparent;
+    border: none;
+    color: $color__basic-100;
     cursor: pointer;
     display: block;
     padding: rem(16) rem(32);
-    text-align: center;
     text-transform: uppercase;
+    width: 100%;
   }
 }

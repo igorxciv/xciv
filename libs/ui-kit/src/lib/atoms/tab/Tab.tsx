@@ -22,9 +22,9 @@ export const Tab: FC<Props> = (props: PropsWithChildren<Props>) => {
 
   return (
     <li className={tabClasses}>
-      <a className={titleClasses} onClick={handleClick}>
+      <button role="tab" aria-selected={active} className={titleClasses} onClick={handleClick}>
         {children}
-      </a>
+      </button>
     </li>
   )
 }
